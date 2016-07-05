@@ -102,6 +102,7 @@ norm_counts_data<-as.data.frame(norm_counts)
 ensembl_id<-rownames(norm_counts)
 norm_counts_data<-cbind(ensembl_id,norm_counts_data)
 filtered_norm_counts<-norm_counts_data[!rowSums(norm_counts_data[,2:7]==0)>=1, ]
+dim(filtered_norm_counts)
 ```
 
 
